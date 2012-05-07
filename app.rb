@@ -1,6 +1,6 @@
 require "fnordmetric"
 
-FnordMetric.namespace :foundrystats do
+FnordMetric.namespace :stats do
 
   # numeric (delta) gauge, 1-hour tick
   gauge :unicorns_seen_per_hour, 
