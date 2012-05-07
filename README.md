@@ -1,4 +1,4 @@
-# Track Events From Foundry Apps
+# FnordMetrics Event tracking
 
 
 ## To run this example locally
@@ -21,9 +21,5 @@
    heroku addons:add redistogo:nano
    heroku addons:add newrelic  
 
-   heroku config:add RACK_ENV=staging
-
-# Deploying
-cap deploy : deploys to staing
-cap production deploy: deploys to production
+   heroku config:add RACK_ENV=production
 
