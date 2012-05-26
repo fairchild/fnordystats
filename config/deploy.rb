@@ -1,7 +1,7 @@
 # Bundler stuff
 require "bundler/capistrano"
 require 'capistrano_colors'
-require 'new_relic/recipes'
+# require 'new_relic/recipes'
 
 set :application, "fnordystats"
 set :fqdn, ENV['FQDN']||"#{application}.example.com"
@@ -31,7 +31,7 @@ set :use_sudo, false
 set :bundle_flags, ""
 set :bundle_without, [:test]
 
-after "deploy:update", "newrelic:notice_deployment"
+# after "deploy:update", "newrelic:notice_deployment"
 
 
 # if you want to clean up old releases on each deploy uncomment this:

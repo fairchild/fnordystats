@@ -7,6 +7,9 @@ gem 'multi_json'
 gem 'oj'
 
 group :development do
-  gem "heroku"
+  gem "heroku", :require=>false
   gem "pry"
+  gem 'capistrano', :require=>false
+  gem 'capistrano_colors'
+  gem 'foreman', :require=>false
 end
