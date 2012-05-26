@@ -1,4 +1,9 @@
+$stdout.sync = true
+require 'rubygems'
+require 'bundler'
+Bundler.require
 require "fnordmetric"
+p [:APP_ENV_PORT, ENV['PORT']]
 
 FnordMetric.namespace :stats do
 
@@ -23,5 +28,3 @@ FnordMetric.namespace :stats do
   }
 
 end
-
-# FnordMetric.standalone

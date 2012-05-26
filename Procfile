@@ -1,2 +1,4 @@
-web: bundle exec thin start -p $PORT 
-worker: bundle exec ruby app.rb worker $PORT
+web: bundle exec ruby web.rb run
+inbound: bundle exec ruby inbound_stream.rb run
+worker: bundle exec ruby worker.rb worker
+

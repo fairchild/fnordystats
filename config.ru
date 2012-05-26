@@ -6,9 +6,9 @@ Bundler.require
 logger = Logger.new($stdout)
 use Rack::CommonLogger, logger
 
-require File.expand_path("app.rb", File.dirname(__FILE__))
+require File.expand_path("web.rb", File.dirname(__FILE__))
 
-run FnordMetric.embedded
+run FnordMetric.standalone
 
 # ===================
 # = Default Options =

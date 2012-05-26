@@ -15,9 +15,6 @@
    
 ### Add some heroku goodies
 
-   heroku addons:add releases
-   heroku addons:upgrade releases:advanced
-   heroku addons:upgrade logging:expanded
    heroku addons:add redistogo:nano
    heroku addons:add newrelic  
 
